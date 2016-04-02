@@ -1,2 +1,2 @@
 # Ken Ahrens site
-[http://kenahrens.github.io]
+[http://kahrens.com](kahrens.com)
