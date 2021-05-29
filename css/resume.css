@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap -  v1.0.0 (https://github.com/kenahrens/kenahrens.github.io#readme)
- * Copyright 2013-2019 kenahrens
+ * Copyright 2013-2021 kenahrens
  * Licensed under MIT (https://github.com/BlackrockDigital/kenahrens.github.io/blob/master/LICENSE)
  */
 
