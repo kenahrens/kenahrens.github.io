@@ -1,0 +1,7 @@
+[
+  {
+    "filename": "featured-image.png",
+    "prompt": "Editorial tech illustration, 1200x630 aspect ratio. Split horizontal composition on a deep navy background. Left half: dark terminal view showing a dense burst of glowing red API request lines all firing simultaneously, converging into a single point of failure — a visual burst pattern. Right half: the same API request streams now spaced out evenly in soft green, flowing in a controlled steady cadence, representing capped concurrency. A thin vertical dividing line between the two halves with a subtle circuit-board pattern overlay connecting them, suggesting AI analysis. Teal and amber accent highlights. No text, no labels, no UI chrome, no logos. Minimalist editorial illustration style, clean geometric shapes, no photorealism. Professional developer blog aesthetic.",
+    "description": "Featured hero image: before/after visualization of concurrent API request burst vs. controlled concurrency fix"
+  }
+]

@@ -1,0 +1,112 @@
+<svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>BYOC: data never leaves your VPC</title>
+  <desc>Production data flows left to right through capture, DLP redaction, and storage, then replays to prod or test environments. Everything stays inside your VPC.</desc>
+
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    text { font-family: 'SF Pro Display', system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <rect width="700" height="340" rx="12" fill="url(#bg2)"/>
+
+  <!-- VPC boundary -->
+  <rect x="24" y="50" width="652" height="240" rx="12" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="8,4" opacity="0.6"/>
+  <rect x="34" y="42" width="88" height="20" rx="4" fill="#0f172a"/>
+  <text x="78" y="56" text-anchor="middle" font-size="10" font-weight="700" fill="#22c55e" letter-spacing="1.5">YOUR VPC</text>
+
+  <!-- Footer bar -->
+  <rect x="24" y="296" width="652" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="44" cy="312" r="8" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="38" y1="306" x2="50" y2="318" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="60" y="317" font-size="10" font-weight="600" fill="#f87171">No data leaves this boundary</text>
+  <text x="440" y="317" font-size="10" font-weight="600" fill="#4ade80">Capture &#x2192; Redact &#x2192; Store &#x2192; Replay</text>
+
+  <!-- ============ MAIN PIPELINE (left to right) ============ -->
+
+  <!-- 1. Production Services -->
+  <rect x="48" y="140" width="110" height="70" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <!-- Server rack icon -->
+  <rect x="68" y="152" width="30" height="8" rx="2" fill="#334155" stroke="#475569" stroke-width="0.5"/>
+  <circle cx="92" cy="156" r="2" fill="#22c55e"/>
+  <rect x="68" y="163" width="30" height="8" rx="2" fill="#334155" stroke="#475569" stroke-width="0.5"/>
+  <circle cx="92" cy="167" r="2" fill="#22c55e"/>
+  <rect x="68" y="174" width="30" height="8" rx="2" fill="#334155" stroke="#475569" stroke-width="0.5"/>
+  <circle cx="92" cy="178" r="2" fill="#22c55e"/>
+  <!-- API traffic lines -->
+  <line x1="108" y1="156" x2="128" y2="156" stroke="#475569" stroke-width="1"/>
+  <line x1="108" y1="167" x2="122" y2="167" stroke="#475569" stroke-width="1"/>
+  <line x1="108" y1="178" x2="126" y2="178" stroke="#475569" stroke-width="1"/>
+  <text x="103" y="224" text-anchor="middle" font-size="9" fill="#94a3b8">Production</text>
+  <text x="103" y="236" text-anchor="middle" font-size="9" fill="#94a3b8">services</text>
+
+  <!-- Arrow 1: prod to capture -->
+  <line x1="158" y1="175" x2="188" y2="175" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="186,170 186,180 195,175" fill="#22c55e"/>
+
+  <!-- 2. eBPF Capture -->
+  <rect x="196" y="148" width="108" height="54" rx="27" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+  <!-- Antenna/probe icon (centered in left half of pill) -->
+  <circle cx="230" cy="175" r="3" fill="#4ade80"/>
+  <line x1="230" y1="172" x2="230" y2="162" stroke="#4ade80" stroke-width="1.5"/>
+  <path d="M224 164 Q230 158 236 164" fill="none" stroke="#4ade80" stroke-width="1" opacity="0.6"/>
+  <path d="M220 167 Q230 157 240 167" fill="none" stroke="#4ade80" stroke-width="1" opacity="0.3"/>
+  <text x="270" y="179" text-anchor="middle" font-size="10" font-weight="700" fill="#4ade80">CAPTURE</text>
+  <text x="250" y="214" text-anchor="middle" font-size="8" fill="#64748b">eBPF, every protocol</text>
+
+  <!-- Arrow 2: capture to redact -->
+  <line x1="304" y1="175" x2="334" y2="175" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="332,170 332,180 341,175" fill="#22c55e"/>
+
+  <!-- 3. DLP Redaction -->
+  <rect x="342" y="148" width="108" height="54" rx="27" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <!-- Shield icon (centered in left half of pill) -->
+  <path d="M375 163 L375 177 Q375 183 381 186 Q387 183 387 177 L387 163 Q381 160 375 163Z" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+  <line x1="381" y1="168" x2="381" y2="176" stroke="#fbbf24" stroke-width="1.5"/>
+  <line x1="377" y1="172" x2="385" y2="172" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="420" y="179" text-anchor="middle" font-size="10" font-weight="700" fill="#fbbf24">REDACT</text>
+  <text x="396" y="214" text-anchor="middle" font-size="8" fill="#64748b">PII scrubbed at capture</text>
+
+  <!-- Arrow 3: redact to storage -->
+  <line x1="450" y1="175" x2="480" y2="175" stroke="#22c55e" stroke-width="2"/>
+  <polygon points="478,170 478,180 487,175" fill="#22c55e"/>
+
+  <!-- 4. Your Storage -->
+  <rect x="488" y="140" width="110" height="70" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <!-- Database cylinder icon -->
+  <ellipse cx="543" cy="160" rx="18" ry="6" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="525" y1="160" x2="525" y2="184" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="561" y1="160" x2="561" y2="184" stroke="#64748b" stroke-width="1.5"/>
+  <ellipse cx="543" cy="184" rx="18" ry="6" fill="none" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="532" y1="170" x2="554" y2="170" stroke="#334155" stroke-width="1"/>
+  <line x1="532" y1="176" x2="548" y2="176" stroke="#334155" stroke-width="1"/>
+  <text x="543" y="224" text-anchor="middle" font-size="9" fill="#94a3b8">Your storage</text>
+
+  <!-- ============ REPLAY ============ -->
+
+  <!-- Line from storage up to replay -->
+  <line x1="543" y1="140" x2="543" y2="108" stroke="#06b6d4" stroke-width="1.5"/>
+  <polygon points="538,112 548,112 543,104" fill="#06b6d4"/>
+
+  <!-- Replay box -->
+  <rect x="505" y="68" width="76" height="34" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="543" y="90" text-anchor="middle" font-size="10" font-weight="700" fill="#67e8f9">REPLAY</text>
+
+  <!-- Arc to production (left from replay) -->
+  <path d="M505 82 L103 82 L103 140" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <polygon points="98,136 108,136 103,145" fill="#06b6d4" opacity="0.5"/>
+  <text x="300" y="77" text-anchor="middle" font-size="8" fill="#67e8f9" opacity="0.7">to production</text>
+
+  <!-- Arc to test/staging (right from replay, down the right side) -->
+  <path d="M581 85 L618 85 L618 252" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
+  <polygon points="613,248 623,248 618,257" fill="#06b6d4" opacity="0.5"/>
+
+  <!-- Test / staging box (bottom right) -->
+  <rect x="572" y="252" width="90" height="28" rx="6" fill="#1e293b" stroke="#06b6d4" stroke-width="1" opacity="0.6"/>
+  <text x="617" y="270" text-anchor="middle" font-size="8" font-weight="600" fill="#67e8f9" opacity="0.8">Test / staging</text>
+</svg>

@@ -1,0 +1,163 @@
+<svg viewBox="0 0 700 520" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>30 EU/EEA countries each enacted their own national data protection law on top of GDPR</title>
+  <desc>Grid showing every EU and EEA member state with its own national data protection legislation layered on top of GDPR</desc>
+
+  <defs>
+    <linearGradient id="bgEU" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    text { font-family: 'SF Pro Display', system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <rect width="700" height="520" rx="12" fill="url(#bgEU)"/>
+
+  <text x="350" y="36" text-anchor="middle" font-size="16" font-weight="800" fill="#f8fafc" letter-spacing="-0.3">GDPR is just the floor</text>
+  <text x="350" y="56" text-anchor="middle" font-size="11" fill="#94a3b8">30 EU/EEA countries each enacted their own national data protection law on top of it</text>
+
+  <!-- Row 1 -->
+  <rect x="20" y="76" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="82" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Germany</text>
+  <text x="82" y="108" text-anchor="middle" font-size="7.5" fill="#64748b">BDSG (2018)</text>
+
+  <rect x="155" y="76" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="217" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">France</text>
+  <text x="217" y="108" text-anchor="middle" font-size="7.5" fill="#64748b">Loi Informatique</text>
+
+  <rect x="290" y="76" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="352" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Italy</text>
+  <text x="352" y="108" text-anchor="middle" font-size="7.5" fill="#64748b">D.Lgs. 196/2003</text>
+
+  <rect x="425" y="76" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="487" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Spain</text>
+  <text x="487" y="108" text-anchor="middle" font-size="7.5" fill="#64748b">LOPDGDD (2018)</text>
+
+  <rect x="560" y="76" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="622" y="94" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Netherlands</text>
+  <text x="622" y="108" text-anchor="middle" font-size="7.5" fill="#64748b">UAVG (2018)</text>
+
+  <!-- Row 2 -->
+  <rect x="20" y="126" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="82" y="144" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Poland</text>
+  <text x="82" y="158" text-anchor="middle" font-size="7.5" fill="#64748b">Act of 10 May 2018</text>
+
+  <rect x="155" y="126" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="217" y="144" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Belgium</text>
+  <text x="217" y="158" text-anchor="middle" font-size="7.5" fill="#64748b">Law of 30 July 2018</text>
+
+  <rect x="290" y="126" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="352" y="144" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Sweden</text>
+  <text x="352" y="158" text-anchor="middle" font-size="7.5" fill="#64748b">DPA Act (2018:218)</text>
+
+  <rect x="425" y="126" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="487" y="144" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Austria</text>
+  <text x="487" y="158" text-anchor="middle" font-size="7.5" fill="#64748b">DSG (2018)</text>
+
+  <rect x="560" y="126" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="622" y="144" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Denmark</text>
+  <text x="622" y="158" text-anchor="middle" font-size="7.5" fill="#64748b">Databeskyttelsesloven</text>
+
+  <!-- Row 3 -->
+  <rect x="20" y="176" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="82" y="194" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Finland</text>
+  <text x="82" y="208" text-anchor="middle" font-size="7.5" fill="#64748b">Tietosuojalaki (2018)</text>
+
+  <rect x="155" y="176" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="217" y="194" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Ireland</text>
+  <text x="217" y="208" text-anchor="middle" font-size="7.5" fill="#64748b">DPA 2018</text>
+
+  <rect x="290" y="176" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="352" y="194" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Portugal</text>
+  <text x="352" y="208" text-anchor="middle" font-size="7.5" fill="#64748b">Lei 58/2019</text>
+
+  <rect x="425" y="176" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="487" y="194" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Greece</text>
+  <text x="487" y="208" text-anchor="middle" font-size="7.5" fill="#64748b">Law 4624/2019</text>
+
+  <rect x="560" y="176" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="622" y="194" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Czechia</text>
+  <text x="622" y="208" text-anchor="middle" font-size="7.5" fill="#64748b">Act 110/2019</text>
+
+  <!-- Row 4 -->
+  <rect x="20" y="226" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="82" y="244" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Romania</text>
+  <text x="82" y="258" text-anchor="middle" font-size="7.5" fill="#64748b">Law 190/2018</text>
+
+  <rect x="155" y="226" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="217" y="244" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Hungary</text>
+  <text x="217" y="258" text-anchor="middle" font-size="7.5" fill="#64748b">Act CXII of 2011</text>
+
+  <rect x="290" y="226" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="352" y="244" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Bulgaria</text>
+  <text x="352" y="258" text-anchor="middle" font-size="7.5" fill="#64748b">LPPD (2019 amend)</text>
+
+  <rect x="425" y="226" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="487" y="244" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Croatia</text>
+  <text x="487" y="258" text-anchor="middle" font-size="7.5" fill="#64748b">LPDP (NN 42/2018)</text>
+
+  <rect x="560" y="226" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="622" y="244" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Slovakia</text>
+  <text x="622" y="258" text-anchor="middle" font-size="7.5" fill="#64748b">Act 18/2018</text>
+
+  <!-- Row 5 -->
+  <rect x="20" y="276" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="82" y="294" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Lithuania</text>
+  <text x="82" y="308" text-anchor="middle" font-size="7.5" fill="#64748b">Law on LPD (2018)</text>
+
+  <rect x="155" y="276" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="217" y="294" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Slovenia</text>
+  <text x="217" y="308" text-anchor="middle" font-size="7.5" fill="#64748b">ZVOP-2 (2022)</text>
+
+  <rect x="290" y="276" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="352" y="294" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Latvia</text>
+  <text x="352" y="308" text-anchor="middle" font-size="7.5" fill="#64748b">DPL (2018)</text>
+
+  <rect x="425" y="276" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="487" y="294" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Estonia</text>
+  <text x="487" y="308" text-anchor="middle" font-size="7.5" fill="#64748b">IKS (2019 amend)</text>
+
+  <rect x="560" y="276" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="622" y="294" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Cyprus</text>
+  <text x="622" y="308" text-anchor="middle" font-size="7.5" fill="#64748b">Law 125(I)/2018</text>
+
+  <!-- Row 6 -->
+  <rect x="20" y="326" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="82" y="344" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Luxembourg</text>
+  <text x="82" y="358" text-anchor="middle" font-size="7.5" fill="#64748b">Law of 1 Aug 2018</text>
+
+  <rect x="155" y="326" width="125" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="217" y="344" text-anchor="middle" font-size="9" font-weight="700" fill="#60a5fa">Malta</text>
+  <text x="217" y="358" text-anchor="middle" font-size="7.5" fill="#64748b">DPA Cap. 586</text>
+
+  <!-- EEA (non-EU) -->
+  <rect x="290" y="326" width="125" height="42" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="352" y="344" text-anchor="middle" font-size="9" font-weight="700" fill="#a78bfa">Norway</text>
+  <text x="352" y="358" text-anchor="middle" font-size="7.5" fill="#64748b">Personopplysningsloven</text>
+
+  <rect x="425" y="326" width="125" height="42" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="487" y="344" text-anchor="middle" font-size="9" font-weight="700" fill="#a78bfa">Iceland</text>
+  <text x="487" y="358" text-anchor="middle" font-size="7.5" fill="#64748b">Act 90/2018</text>
+
+  <rect x="560" y="326" width="125" height="42" rx="6" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="622" y="344" text-anchor="middle" font-size="9" font-weight="700" fill="#a78bfa">Liechtenstein</text>
+  <text x="622" y="358" text-anchor="middle" font-size="7.5" fill="#64748b">DSG (2018)</text>
+
+  <!-- Legend -->
+  <rect x="20" y="386" width="10" height="10" rx="2" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/>
+  <text x="36" y="395" font-size="9" fill="#64748b">EU member state (27)</text>
+
+  <rect x="180" y="386" width="10" height="10" rx="2" fill="#1e293b" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="196" y="395" font-size="9" fill="#64748b">EEA non-EU (3)</text>
+
+  <!-- GDPR base layer -->
+  <rect x="20" y="416" width="665" height="40" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="20" y="416" width="665" height="40" rx="8" fill="#3b82f6" opacity="0.06"/>
+  <text x="352" y="441" text-anchor="middle" font-size="12" font-weight="700" fill="#60a5fa">GDPR baseline</text>
+
+  <!-- Bottom note -->
+  <text x="350" y="490" text-anchor="middle" font-size="10" fill="#94a3b8">Each country exercises GDPR's ~70 opening clauses differently.</text>
+  <text x="350" y="506" text-anchor="middle" font-size="10" fill="#94a3b8">"GDPR compliant" means 30 different things depending on where you operate.</text>
+</svg>

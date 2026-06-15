@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect width="720" height="460" fill="#fafafa" rx="8"/>
+
+  <!-- CONDITION A: The Alert -->
+  <text x="360" y="24" text-anchor="middle" font-size="11" fill="#999" font-weight="600" letter-spacing="1">WHAT YOUR AGENT GETS</text>
+
+  <text x="18" y="56" font-size="13" font-weight="600" fill="#808184">Condition A: the alert</text>
+
+  <!-- Alert box -->
+  <rect x="18" y="68" width="684" height="130" rx="6" fill="white" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- Red alert bar -->
+  <rect x="18" y="68" width="684" height="6" rx="6" fill="#e53935"/>
+  <rect x="24" y="68" width="672" height="3" fill="#e53935"/>
+
+  <!-- Alert header -->
+  <rect x="30" y="84" width="52" height="18" rx="3" fill="#e53935"/>
+  <text x="56" y="97" text-anchor="middle" font-size="10" fill="white" font-weight="600">ALERT</text>
+  <text x="92" y="97" font-size="11" fill="#333">High error rate on <tspan font-family="monospace" font-size="10" fill="#7b1fa2">/v1/chat/completions</tspan></text>
+  <text x="430" y="97" font-size="10" fill="#999">Priority P1  |  api-gateway  |  production</text>
+
+  <!-- Metric graph (simplified) -->
+  <rect x="30" y="110" width="340" height="76" rx="4" fill="#fafafa" stroke="#eee" stroke-width="1"/>
+  <text x="36" y="124" font-size="9" fill="#999">Error rate %</text>
+  <!-- Flat line then spike -->
+  <polyline points="40,170 80,170 120,169 160,170 200,168 220,165 230,148 240,130 260,128 280,132 300,126 320,130 340,128 360,126" fill="none" stroke="#e53935" stroke-width="1.5"/>
+  <!-- Threshold line -->
+  <line x1="40" y1="158" x2="365" y2="158" stroke="#ff9800" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <text x="365" y="162" font-size="8" fill="#ff9800">threshold</text>
+  <text x="40" y="182" font-size="8" fill="#bbb">12:00</text>
+  <text x="200" y="182" font-size="8" fill="#bbb">12:15</text>
+  <text x="350" y="182" font-size="8" fill="#bbb">12:30</text>
+
+  <!-- Alert details -->
+  <text x="390" y="124" font-size="10" fill="#666">Status: <tspan fill="#e53935" font-weight="600">Alert</tspan></text>
+  <text x="390" y="140" font-size="10" fill="#666">Error rate: <tspan fill="#333" font-weight="600">0.2% → 15%</tspan></text>
+  <text x="390" y="156" font-size="10" fill="#666">5xx count: <tspan fill="#333" font-weight="600">312 in 30 min</tspan></text>
+  <text x="390" y="172" font-size="10" fill="#666">Tenants: <tspan fill="#333">ACME, Contoso, Globex</tspan></text>
+  <text x="390" y="188" font-size="10" fill="#666">Deploy: <tspan fill="#888">none in 48h</tspan></text>
+
+  <!-- Arrow pointing down -->
+  <text x="360" y="218" text-anchor="middle" font-size="11" fill="#bbb">that's it. no request body, no response, no stack trace.</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="234" x2="680" y2="234" stroke="#e0e0e0" stroke-width="1"/>
+
+  <!-- CONDITION B: The Capture -->
+  <text x="18" y="258" font-size="13" font-weight="600" fill="#FFA400">Condition B: the capture</text>
+
+  <!-- Capture box -->
+  <rect x="18" y="270" width="684" height="172" rx="6" fill="white" stroke="#FFA400" stroke-width="1.5"/>
+
+  <!-- Request section -->
+  <rect x="30" y="280" width="324" height="150" rx="4" fill="#fff8e1"/>
+  <text x="36" y="296" font-size="10" font-weight="600" fill="#e08f00">REQUEST</text>
+  <text x="36" y="314" font-size="10" font-family="monospace" fill="#333">POST /v1/chat/completions</text>
+  <text x="36" y="330" font-size="9" font-family="monospace" fill="#666">X-Tenant-Id: ten_4f7c</text>
+  <text x="36" y="344" font-size="9" font-family="monospace" fill="#666">X-Provider: anthropic</text>
+  <text x="36" y="362" font-size="9" font-family="monospace" fill="#555">{</text>
+  <text x="48" y="376" font-size="9" font-family="monospace" fill="#555">"model": "claude-sonnet-4-5",</text>
+  <text x="48" y="390" font-size="9" font-family="monospace" fill="#555">"stop": ["\n\nHuman:"],</text>
+  <text x="48" y="404" font-size="9" font-family="monospace" fill="#555">"messages": [...]</text>
+  <text x="36" y="418" font-size="9" font-family="monospace" fill="#555">}</text>
+
+  <!-- Response section -->
+  <rect x="366" y="280" width="324" height="150" rx="4" fill="#fce4ec"/>
+  <text x="372" y="296" font-size="10" font-weight="600" fill="#c62828">RESPONSE (bug here)</text>
+  <text x="372" y="314" font-size="10" font-family="monospace" fill="#333">200 OK</text>
+  <text x="372" y="332" font-size="9" font-family="monospace" fill="#555">{</text>
+  <text x="384" y="346" font-size="9" font-family="monospace" fill="#555">"finish_reason": "stop_sequence",</text>
+  <text x="384" y="360" font-size="9" font-family="monospace" fill="#c62828" font-weight="600">"stop_sequence": null,</text>
+  <text x="500" y="374" font-size="8" fill="#c62828">^ should be "\n\nHuman:"</text>
+  <text x="384" y="392" font-size="9" font-family="monospace" fill="#555">"usage": {</text>
+  <text x="396" y="406" font-size="9" font-family="monospace" fill="#555">"input_tokens": 14, ...</text>
+  <text x="384" y="420" font-size="9" font-family="monospace" fill="#555">}</text>
+
+  <!-- Bottom label -->
+  <text x="360" y="454" text-anchor="middle" font-size="11" fill="#FFA400" font-weight="600">the capture shows exactly where the wire diverges from the code</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Every vendor promises not to train on your data</title>
+
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="heroAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    text { font-family: 'SF Pro Display', system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <rect width="1200" height="630" fill="url(#heroBg)"/>
+
+  <text x="600" y="240" text-anchor="middle" font-size="48" font-weight="800" fill="#f8fafc" letter-spacing="-1">"We promise not to</text>
+  <text x="600" y="300" text-anchor="middle" font-size="48" font-weight="800" fill="#f8fafc" letter-spacing="-1">train on your data"</text>
+
+  <rect x="350" y="340" width="500" height="4" rx="2" fill="url(#heroAccent)"/>
+
+  <text x="600" y="390" text-anchor="middle" font-size="22" fill="#94a3b8">That's a policy, not an architecture.</text>
+
+  <rect x="420" y="430" width="160" height="40" rx="20" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="500" y="455" text-anchor="middle" font-size="13" font-weight="600" fill="#fbbf24">MSA CLAUSE</text>
+
+  <text x="600" y="455" text-anchor="middle" font-size="18" fill="#475569">vs</text>
+
+  <rect x="620" y="430" width="160" height="40" rx="20" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="455" text-anchor="middle" font-size="13" font-weight="600" fill="#4ade80">BYOC</text>
+</svg>

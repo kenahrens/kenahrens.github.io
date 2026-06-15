@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <rect width="680" height="240" fill="#fafafa" rx="8"/>
+  <text x="340" y="32" text-anchor="middle" font-size="15" font-weight="600" fill="#1a1a1a">the confidence trap (11 bugs where captures hurt)</text>
+
+  <!-- Without captures (A) - PASSED -->
+  <rect x="60" y="55" width="250" height="140" rx="8" fill="white" stroke="#66bb6a" stroke-width="2"/>
+  <text x="185" y="78" text-anchor="middle" font-size="12" font-weight="600" fill="#2e7d32">without captures (passed)</text>
+
+  <rect x="85" y="95" width="200" height="12" rx="2" fill="#e8f5e9"/>
+  <rect x="85" y="95" width="143" height="12" rx="2" fill="#66bb6a" opacity="0.8"/>
+  <text x="85" y="125" font-size="24" font-weight="700" fill="#2e7d32">143s</text>
+  <text x="175" y="125" font-size="12" fill="#888">avg solve time</text>
+
+  <circle cx="105" cy="152" r="8" fill="#66bb6a" opacity="0.6"/>
+  <circle cx="130" cy="152" r="8" fill="#66bb6a" opacity="0.6"/>
+  <circle cx="155" cy="152" r="8" fill="#66bb6a" opacity="0.6"/>
+  <text x="180" y="157" font-size="13" font-weight="600" fill="#2e7d32">3.0</text>
+  <text x="210" y="157" font-size="12" fill="#888">files explored</text>
+
+  <text x="185" y="182" text-anchor="middle" font-size="11" fill="#666" font-style="italic">slow, exploratory, correct</text>
+
+  <!-- With captures (B) - FAILED -->
+  <rect x="370" y="55" width="250" height="140" rx="8" fill="white" stroke="#e57373" stroke-width="2"/>
+  <text x="495" y="78" text-anchor="middle" font-size="12" font-weight="600" fill="#c62828">with captures (failed)</text>
+
+  <rect x="395" y="95" width="200" height="12" rx="2" fill="#fce4ec"/>
+  <rect x="395" y="95" width="88" height="12" rx="2" fill="#e57373" opacity="0.8"/>
+  <text x="395" y="125" font-size="24" font-weight="700" fill="#c62828">63s</text>
+  <text x="460" y="125" font-size="12" fill="#888">avg solve time</text>
+
+  <circle cx="415" cy="152" r="8" fill="#e57373" opacity="0.6"/>
+  <text x="440" y="157" font-size="13" font-weight="600" fill="#c62828">0.9</text>
+  <text x="470" y="157" font-size="12" fill="#888">files explored</text>
+
+  <text x="495" y="182" text-anchor="middle" font-size="11" fill="#666" font-style="italic">fast, decisive, wrong</text>
+
+  <text x="340" y="130" text-anchor="middle" font-size="18" fill="#999">vs</text>
+
+  <text x="340" y="222" text-anchor="middle" font-size="12" fill="#555">captures replaced exploration with misplaced confidence</text>
+</svg>

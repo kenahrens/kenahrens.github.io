@@ -1,0 +1,91 @@
+<svg viewBox="0 0 700 500" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>What you're actually trusting when you sign the MSA</title>
+  <desc>A chain of trust assumptions between your data and a vendor promise</desc>
+
+  <defs>
+    <linearGradient id="grdDark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="grdRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="grdBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    text { font-family: 'SF Pro Display', system-ui, -apple-system, sans-serif; }
+  </style>
+
+  <rect width="700" height="500" rx="12" fill="url(#grdDark)"/>
+
+  <text x="350" y="44" text-anchor="middle" font-size="18" font-weight="800" fill="#f8fafc" letter-spacing="-0.3">What you're actually trusting</text>
+  <text x="350" y="68" text-anchor="middle" font-size="13" fill="#94a3b8">when you sign the MSA clause</text>
+
+  <rect x="40" y="96" width="160" height="56" rx="28" fill="url(#grdBlue)" filter="url(#glow)"/>
+  <text x="120" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">YOUR DATA</text>
+
+  <line x1="120" y1="152" x2="120" y2="180" stroke="#475569" stroke-width="2"/>
+
+  <rect x="40" y="180" width="160" height="48" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="120" y="201" text-anchor="middle" font-size="10" font-weight="600" fill="#fbbf24" letter-spacing="1.5">MSA CLAUSE</text>
+  <text x="120" y="217" text-anchor="middle" font-size="9" fill="#94a3b8">"won't train on your data"</text>
+
+  <line x1="120" y1="228" x2="120" y2="256" stroke="#475569" stroke-width="2"/>
+
+  <rect x="28" y="256" width="184" height="48" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="120" y="277" text-anchor="middle" font-size="10" font-weight="600" fill="#f87171" letter-spacing="1.5">VENDOR'S CLOUD</text>
+  <text x="120" y="293" text-anchor="middle" font-size="9" fill="#94a3b8">multi-tenant infrastructure</text>
+
+  <path d="M 212 270 Q 280 270 300 140" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <circle cx="300" cy="140" r="3" fill="#ef4444"/>
+  <path d="M 212 275 Q 310 275 340 210" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <circle cx="340" cy="210" r="3" fill="#ef4444"/>
+  <path d="M 212 280 Q 320 280 340 290" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <circle cx="340" cy="290" r="3" fill="#ef4444"/>
+  <path d="M 212 285 Q 310 320 340 360" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <circle cx="340" cy="360" r="3" fill="#ef4444"/>
+  <path d="M 212 290 Q 280 370 300 430" stroke="#ef4444" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <circle cx="300" cy="430" r="3" fill="#ef4444"/>
+
+  <rect x="310" y="108" width="360" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="310" y="108" width="4" height="56" rx="2" fill="url(#grdRed)"/>
+  <text x="330" y="131" font-size="13" font-weight="700" fill="#f8fafc">Internal controls</text>
+  <text x="330" y="150" font-size="10.5" fill="#64748b">Does the vendor actually enforce the clause?</text>
+  <text x="640" y="138" text-anchor="middle" font-size="20" fill="#334155">01</text>
+
+  <rect x="350" y="180" width="320" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="350" y="180" width="4" height="56" rx="2" fill="url(#grdRed)"/>
+  <text x="370" y="203" font-size="13" font-weight="700" fill="#f8fafc">Employee access</text>
+  <text x="370" y="222" font-size="10.5" fill="#64748b">Who inside the vendor can see your data?</text>
+  <text x="640" y="210" text-anchor="middle" font-size="20" fill="#334155">02</text>
+
+  <rect x="350" y="256" width="320" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="350" y="256" width="4" height="56" rx="2" fill="url(#grdRed)"/>
+  <text x="370" y="279" font-size="13" font-weight="700" fill="#f8fafc">Subprocessors</text>
+  <text x="370" y="298" font-size="10.5" fill="#64748b">Where does the data go after the vendor?</text>
+  <text x="640" y="286" text-anchor="middle" font-size="20" fill="#334155">03</text>
+
+  <rect x="350" y="332" width="320" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="350" y="332" width="4" height="56" rx="2" fill="url(#grdRed)"/>
+  <text x="370" y="355" font-size="13" font-weight="700" fill="#f8fafc">Vendor's AI tools</text>
+  <text x="370" y="374" font-size="10.5" fill="#64748b">What models are processing your payloads?</text>
+  <text x="640" y="362" text-anchor="middle" font-size="20" fill="#334155">04</text>
+
+  <rect x="310" y="404" width="360" height="56" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="310" y="404" width="4" height="56" rx="2" fill="url(#grdRed)"/>
+  <text x="330" y="427" font-size="13" font-weight="700" fill="#f8fafc">Future acquirer</text>
+  <text x="330" y="446" font-size="10.5" fill="#64748b">Will the next owner honor the contract?</text>
+  <text x="640" y="434" text-anchor="middle" font-size="20" fill="#334155">05</text>
+
+  <line x1="40" y1="476" x2="660" y2="476" stroke="#334155" stroke-width="1"/>
+  <text x="350" y="494" text-anchor="middle" font-size="11" font-weight="600" fill="#f87171">Five assumptions. One contract. Zero architectural guarantees.</text>
+</svg>
