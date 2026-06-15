@@ -93,7 +93,6 @@ Talks, podcasts, and writing across the web.
 - [Scaling Time Series Databases on Kubernetes](https://youtu.be/9equQhWv6jM) — KubeCon lightning talk (CNCF)
 - [The 4 Biggest Challenges of Scaling Cloud-Native AI Workloads](https://community2.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-on-demand-webinar-the-4-biggest-challenges-of-scaling-cloud-native-ai-workloads/) — CNCF webinar
 - [Automated Testing with Ken Ahrens and Matt LeRay](https://softwareengineeringdaily.com/2021/04/23/speedscale-automated-testing-with-ken-ahrens-and-matt-leray/) — Software Engineering Daily
-- [Slide decks](https://www.slideshare.net/KenAhrens) — SlideShare
 
 **Guest writing**
 
