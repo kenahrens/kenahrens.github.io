@@ -31,7 +31,8 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "github",   url: "https://github.com/kenahrens" },
     { name: "linkedin", url: "https://www.linkedin.com/in/kenahrens/" },
-    { name: "mail",     url: "mailto:ken@speedscale.com" },
+    { name: "x",        url: "https://x.com/kenahrens" },
+    { name: "devto",    url: "https://dev.to/kenahrens", linkTitle: "Ken Ahrens on dev.to" },
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
