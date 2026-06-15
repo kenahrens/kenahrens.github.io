@@ -83,3 +83,22 @@ Outside of work I've been an open source person for a long time. My dad got me o
     <span class="resume-dates">B.S., Computer Engineering · Co-op Program</span>
   </div>
 </div>
+
+## Elsewhere
+
+Talks, podcasts, and writing across the web.
+
+**Talks & podcasts**
+
+- [The 4 Biggest Challenges of Scaling Cloud-Native AI Workloads](https://speedscale.com/blog/webinar-replay-the-4-biggest-challenges-of-scaling-cloud-native-ai-workloads/) — CNCF webinar (video)
+- [Automated Testing with Ken Ahrens and Matt LeRay](https://softwareengineeringdaily.com/2021/04/23/speedscale-automated-testing-with-ken-ahrens-and-matt-leray/) — Software Engineering Daily
+- [Slide decks](https://www.slideshare.net/KenAhrens) — SlideShare
+
+**Guest writing**
+
+- [New Relic — all posts](https://newrelic.com/blog/authors/ken-ahrens), including [Combine Load Testing and Observability with Speedscale and New Relic One](https://newrelic.com/blog/how-to-relic/speedscale-load-testing-observability)
+- [Timescale — all posts](https://www.timescale.com/blog/author/ken), including [Automated Mocking Using API Traffic: Speedscale's Story](https://www.timescale.com/blog/automated-mocking-using-api-traffic-speedscales-story)
+
+**Press & mentions**
+
+- [Speedscale: K8s API Auto-Testing for Rapid Iteration](https://intellyx.com/2021/08/25/speedscale-k8s-api-auto-testing/) — Intellyx (Jason English)
