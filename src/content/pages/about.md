@@ -90,14 +90,16 @@ Talks, podcasts, and writing across the web.
 
 **Talks & podcasts**
 
-- [The 4 Biggest Challenges of Scaling Cloud-Native AI Workloads](https://speedscale.com/blog/webinar-replay-the-4-biggest-challenges-of-scaling-cloud-native-ai-workloads/) — CNCF webinar (video)
+- [Scaling Time Series Databases on Kubernetes](https://youtu.be/9equQhWv6jM) — KubeCon lightning talk (CNCF)
+- [The 4 Biggest Challenges of Scaling Cloud-Native AI Workloads](https://community2.cncf.io/events/details/cncf-cncf-online-programs-presents-cncf-on-demand-webinar-the-4-biggest-challenges-of-scaling-cloud-native-ai-workloads/) — CNCF webinar
 - [Automated Testing with Ken Ahrens and Matt LeRay](https://softwareengineeringdaily.com/2021/04/23/speedscale-automated-testing-with-ken-ahrens-and-matt-leray/) — Software Engineering Daily
 - [Slide decks](https://www.slideshare.net/KenAhrens) — SlideShare
 
 **Guest writing**
 
-- [New Relic — all posts](https://newrelic.com/blog/authors/ken-ahrens), including [Combine Load Testing and Observability with Speedscale and New Relic One](https://newrelic.com/blog/how-to-relic/speedscale-load-testing-observability)
-- [Timescale — all posts](https://www.timescale.com/blog/author/ken), including [Automated Mocking Using API Traffic: Speedscale's Story](https://www.timescale.com/blog/automated-mocking-using-api-traffic-speedscales-story)
+- [New Relic — all posts](https://newrelic.com/blog/authors/ken-ahrens), including [Combine Load Testing and Observability with Speedscale and New Relic One](https://newrelic.com/blog/observability/speedscale-load-testing-observability)
+- [TigerData (formerly Timescale): Automated Mocking Using API Traffic](https://www.tigerdata.com/blog/automated-mocking-using-api-traffic-speedscales-story)
+- [Datadog: Stress Test Kubernetes with Speedscale](https://www.datadoghq.com/blog/stress-test-kubernetes-with-speedscale/)
 
 **Press & mentions**
 
