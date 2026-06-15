@@ -3,7 +3,7 @@ title: About
 description: Ken Ahrens — co-founder and CEO of Speedscale, long-time open source tinkerer.
 ---
 
-![Ken Ahrens](/img/kahrens.jpg)
+<img src="/img/kahrens.jpg" alt="Ken Ahrens" width="180" height="180" style="border-radius: 9999px; object-fit: cover; float: right; margin: 0 0 1rem 1.25rem;" />
 
 I'm a proud family patriarch and occasional developer of ill repute. At work I'm co-founder and CEO at [Speedscale](https://speedscale.com), where we help companies test applications so they run faster with fewer errors in production.
 
