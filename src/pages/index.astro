@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .filter((p) => (import.meta.env.PROD ? !p.data.draft : true))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+---
+
+<Base
+  title="Ken Ahrens"
+  description="Ken Ahrens — co-founder and CEO of Speedscale. Open source, homelabs, and running AI locally."
+>
+  <section class="intro">
+    <h1>Ken Ahrens</h1>
+    <p>
+      Co-founder and CEO at Speedscale. I've run Linux at home since 2007 and
+      mostly never stopped tinkering. These days that means a k3s homelab on a
+      Raspberry Pi and running AI models locally on the hardware I already own.
+      I write about what I build and what I learn.
+    </p>
+  </section>
+
+  <section>
+    <h2>Writing</h2>
+    {
+      posts.length === 0 ? (
+        <p>Nothing published yet.</p>
+      ) : (
+        <ul class="post-list">
+          {posts.map((p) => (
+            <li>
+              <a href={`/blog/${p.id}/`}>{p.data.title}</a>
+              <time datetime={p.data.pubDate.toISOString()}>{fmt(p.data.pubDate)}</time>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+</Base>

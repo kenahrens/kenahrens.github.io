@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/blog', label: 'Writing' },
+  { href: '/about', label: 'About' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="icon" type="image/jpeg" href="/img/profile.jpg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">Ken Ahrens</a>
+      <nav>
+        {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        Built with Astro, hosted on GitHub Pages.
+        <a href="https://github.com/kenahrens">GitHub</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,39 +1,14 @@
 {
-  "name": "kenahrens.github.io",
-  "version": "1.0.0",
-  "description": "Now with custom domain: [kahrens.com](http://kahrens.com)",
-  "main": "index.html",
+  "name": "kahrens.com",
+  "type": "module",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "start": "npx gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kenahrens/kenahrens.github.io.git"
-  },
-  "author": "kenahrens",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kenahrens/kenahrens.github.io/issues"
-  },
-  "homepage": "https://github.com/kenahrens/kenahrens.github.io#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "bootstrap": "5.3.7",
-    "jquery": "^3.7.1",
-    "jquery.easing": "^1.4.1"
-  },
-  "devDependencies": {
-    "browser-sync": "^3.0.4",
-    "del": "^8.0.0",
-    "gulp": "^5.0.1",
-    "gulp-autoprefixer": "^9.0.0",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-header": "2.0.9",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rename": "^2.0.0",
-    "gulp-sass": "^6.0.1",
-    "gulp-uglify": "3.0.2",
-    "merge-stream": "2.0.0"
+    "astro": "^5.7.0"
   }
 }
