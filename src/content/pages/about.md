@@ -11,30 +11,75 @@ Outside of work I've been an open source person for a long time. My dad got me o
 
 ## Experience
 
-**Co-Founder, CEO — [Speedscale](https://speedscale.com)** · January 2020 – Present
-Speedscale automatically generates realistic API test suites for cloud-native architectures like Kubernetes. Launched August 2020, backed by Y Combinator, Sierra Ventures, Tech Square Ventures, Soma Capital, and others.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Co-Founder &amp; CEO · <a href="https://speedscale.com">Speedscale</a></span>
+    <span class="resume-dates">January 2020 – Present</span>
+  </div>
+  <p>We automatically generate realistic API test suites for cloud-native architectures like Kubernetes. Launched August 2020, backed by Y Combinator, Sierra Ventures, Tech Square Ventures, Soma Capital, and others.</p>
+</div>
 
-**Co-Founder, CTO — WiseCracker LLC** · July 2014 – December 2024
-A side hobby with my brother Mike: we designed and manufactured bottle openers and bicycle frame components, made in the USA, sold online and through distribution. We wound the business down in December 2024.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Co-Founder &amp; CTO · WiseCracker LLC</span>
+    <span class="resume-dates">July 2014 – December 2024</span>
+  </div>
+  <p>A side hobby with my brother Mike: we designed and manufactured bottle openers and bicycle frame components, made in the USA, sold online and through distribution. We wound the business down in December 2024.</p>
+</div>
 
-**Senior Director / Principal Architect — New Relic** · August 2014 – September 2019
-Built and led a dedicated Architects team for some of New Relic's largest customers with the most complex monitoring needs. Recognized as Enterprise Technical Sales MVP in 2016 and 2017.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Senior Director / Principal Architect · New Relic</span>
+    <span class="resume-dates">August 2014 – September 2019</span>
+  </div>
+  <p>Built and led a dedicated Architects team for some of New Relic's largest customers with the most complex monitoring needs. Recognized as Enterprise Technical Sales MVP in 2016 and 2017.</p>
+</div>
 
-**Enterprise Sales Engineer — Pentaho (acquired by Hitachi)** · January 2014 – August 2014
-Worked with enterprise clients on the right use cases for Pentaho Data Integration and Business Analytics. An all-open-source shop, and the experience that cemented how I think about software.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Enterprise Sales Engineer · Pentaho (acquired by Hitachi)</span>
+    <span class="resume-dates">January 2014 – August 2014</span>
+  </div>
+  <p>Worked with enterprise clients on the right use cases for Pentaho Data Integration and Business Analytics. An all-open-source shop, and the experience that cemented how I think about software.</p>
+</div>
 
-**Senior Director, Presales — CA Technologies, DevOps Division (acquired by Broadcom)** · September 2011 – January 2014
-After the ITKO acquisition, managed Application Delivery Presales for North America. Doubled the team, trained 300 CA folks, and tripled revenue in about 18 months.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Senior Director, Presales · CA Technologies, DevOps Division</span>
+    <span class="resume-dates">September 2011 – January 2014</span>
+  </div>
+  <p>After the ITKO acquisition, managed Application Delivery Presales for North America. Doubled the team, trained 300 CA folks, and tripled revenue in about 18 months.</p>
+</div>
 
-**Solutions Architect — ITKO (acquired by CA Technologies)** · October 2007 – September 2011
-Presented cutting-edge technology in live proof-of-concept engagements, including Service Virtualization to improve test coverage and speed development across TIBCO, webMethods, Oracle/BEA, and IBM middleware.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Solutions Architect · ITKO (acquired by CA Technologies)</span>
+    <span class="resume-dates">October 2007 – September 2011</span>
+  </div>
+  <p>Presented cutting-edge technology in live proof-of-concept engagements, including Service Virtualization to improve test coverage and speed development across TIBCO, webMethods, Oracle/BEA, and IBM middleware.</p>
+</div>
 
-**Presales Consultant — CA Technologies, Wily Division (acquired by Broadcom)** · April 2006 – October 2007
-Application Performance Management for Java/J2EE (WebLogic, WebSphere, JBoss) and .NET web applications.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Presales Consultant · CA Technologies, Wily Division</span>
+    <span class="resume-dates">April 2006 – October 2007</span>
+  </div>
+  <p>Application Performance Management for Java/J2EE (WebLogic, WebSphere, JBoss) and .NET web applications.</p>
+</div>
 
-**Systems Engineer — ILC (later acquired by DataPath)** · August 2001 – April 2006
-Built quotes and proposals for Network Management Systems, owned tradeshow and on-site demos, and ran the corporate co-op program. Wrote simulator programs in Java used internally and sold for over $400K in revenue.
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Systems Engineer · ILC (later acquired by DataPath)</span>
+    <span class="resume-dates">August 2001 – April 2006</span>
+  </div>
+  <p>Built quotes and proposals for Network Management Systems, owned tradeshow and on-site demos, and ran the corporate co-op program. Wrote simulator programs in Java used internally and sold for over $400K in revenue.</p>
+</div>
 
 ## Education
 
-**Georgia Tech** — B.S., Computer Engineering (Co-op Program)
+<div class="resume-item">
+  <div class="resume-head">
+    <span class="resume-role">Georgia Tech</span>
+    <span class="resume-dates">B.S., Computer Engineering · Co-op Program</span>
+  </div>
+</div>
