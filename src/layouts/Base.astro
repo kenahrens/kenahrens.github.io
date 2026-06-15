@@ -4,9 +4,10 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  canonical?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, canonical } = Astro.props;
 
 const nav = [
   { href: '/', label: 'Home' },
@@ -23,6 +24,7 @@ const nav = [
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
+    {canonical && <link rel="canonical" href={canonical} />}
     <link rel="icon" type="image/jpeg" href="/img/profile.jpg" />
   </head>
   <body>

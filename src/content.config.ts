@@ -10,6 +10,8 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     series: z.string().optional(),
     draft: z.boolean().default(false),
+    // When set, this post was first published elsewhere; point search engines there.
+    canonicalURL: z.string().url().optional(),
   }),
 });
 

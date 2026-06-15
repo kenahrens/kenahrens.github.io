@@ -1,0 +1,607 @@
+1
+00:00:01,389 --> 00:00:03,869
+One of the really cool things about using
+
+2
+00:00:04,189 --> 00:00:06,589
+development tools like Cursor is
+
+3
+00:00:06,908 --> 00:00:10,069
+it can dramatically speed up your application
+
+4
+00:00:10,069 --> 00:00:10,429
+development.
+
+5
+00:00:10,829 --> 00:00:11,628
+In this case,
+
+6
+00:00:11,868 --> 00:00:15,269
+I'm  using Cursor on an existing application to
+
+7
+00:00:15,269 --> 00:00:18,349
+add a new API call that wasn't in there before.
+
+8
+00:00:18,829 --> 00:00:19,548
+It's great.
+
+9
+00:00:19,548 --> 00:00:20,908
+It went and did the work.
+
+10
+00:00:21,068 --> 00:00:22,349
+It figured out how,
+
+11
+00:00:22,469 --> 00:00:22,568
+
+
+12
+00:00:22,908 --> 00:00:24,028
+it needs to
+
+13
+00:00:24,428 --> 00:00:28,349
+ go make the specific code changes.
+
+14
+00:00:28,768 --> 00:00:29,469
+ but
+
+15
+00:00:29,868 --> 00:00:33,628
+my challenge here is validating that this code
+
+16
+00:00:33,628 --> 00:00:34,348
+actually works.
+
+17
+00:00:34,348 --> 00:00:37,348
+I'm going to flip over to the editor view here so
+
+18
+00:00:37,348 --> 00:00:38,189
+I can show you.
+
+19
+00:00:38,668 --> 00:00:41,228
+This is my microservice here.
+
+20
+00:00:42,348 --> 00:00:45,668
+What  I was just asking it to do was run all the
+
+21
+00:00:45,668 --> 00:00:46,348
+unit tests,
+
+22
+00:00:46,348 --> 00:00:48,469
+make sure that you didn't break any kind of
+
+23
+00:00:48,469 --> 00:00:49,628
+functionality here.
+
+24
+00:00:49,948 --> 00:00:52,749
+But we all know unit tests are not enough.
+
+25
+00:00:53,189 --> 00:00:55,348
+We're not actually running the code itself.
+
+26
+00:00:55,348 --> 00:00:57,588
+So I want to run integration tests.
+
+27
+00:00:57,908 --> 00:01:01,588
+I've got a tool called ProxyMock and I actually
+
+28
+00:01:02,149 --> 00:01:05,108
+have instrumented this application outer Space
+
+29
+00:01:05,429 --> 00:01:09,549
+in my cluster and I can use Proximock to download
+
+30
+00:01:09,549 --> 00:01:11,828
+a snapshot of how this is currently working.
+
+31
+00:01:12,069 --> 00:01:12,468
+So,
+
+32
+00:01:12,649 --> 00:01:14,468
+ download a live
+
+33
+00:01:14,948 --> 00:01:17,028
+snapshot of  Outer Space,
+
+34
+00:01:17,269 --> 00:01:17,668
+go
+
+35
+00:01:18,069 --> 00:01:21,588
+using ProxyMog and run integration tests.
+
+36
+00:01:23,299 --> 00:01:23,539
+So
+
+37
+00:01:23,789 --> 00:01:26,338
+ what I want to make sure here is because
+
+38
+00:01:26,739 --> 00:01:29,299
+I've made changes to a bunch of the different
+
+39
+00:01:29,299 --> 00:01:32,858
+library functions and they're used all throughout
+
+40
+00:01:32,858 --> 00:01:33,299
+the project,
+
+41
+00:01:33,698 --> 00:01:36,739
+I want to make sure that I didn't break anything.
+
+42
+00:01:37,299 --> 00:01:39,618
+So proxymock is a local
+
+43
+00:01:40,019 --> 00:01:40,739
+cli.
+
+44
+00:01:40,899 --> 00:01:44,498
+It's running on my machine and it exposes an MCP
+
+45
+00:01:44,578 --> 00:01:45,218
+interface.
+
+46
+00:01:45,218 --> 00:01:46,099
+That means the
+
+47
+00:01:46,368 --> 00:01:48,578
+ LLM can call it.
+
+48
+00:01:48,989 --> 00:01:50,269
+I'm not going to the Internet.
+
+49
+00:01:50,269 --> 00:01:51,069
+It's a local
+
+50
+00:01:51,388 --> 00:01:52,909
+call on my own machine.
+
+51
+00:01:52,909 --> 00:01:54,909
+And  you have to authenticate,
+
+52
+00:01:55,228 --> 00:01:56,828
+ when you run proxymonk.
+
+53
+00:01:57,149 --> 00:02:00,748
+So  you can see here it's actually running this
+
+54
+00:02:00,989 --> 00:02:02,668
+pull remote recording
+
+55
+00:02:03,069 --> 00:02:06,909
+and  it's gone and created a ProxyMock directory
+
+56
+00:02:07,069 --> 00:02:11,468
+and actually pulled data out on exactly how this
+
+57
+00:02:12,028 --> 00:02:14,269
+ application is running right now.
+
+58
+00:02:14,269 --> 00:02:14,579
+So,
+
+59
+00:02:14,808 --> 00:02:16,288
+so this is a live timestamp.
+
+60
+00:02:16,288 --> 00:02:17,288
+I'm recording this
+
+61
+00:02:17,748 --> 00:02:18,649
+ on
+
+62
+00:02:19,528 --> 00:02:21,209
+ November 19th.
+
+63
+00:02:21,609 --> 00:02:24,769
+So this is fresh data from how the application is
+
+64
+00:02:24,769 --> 00:02:25,769
+running right now.
+
+65
+00:02:26,088 --> 00:02:28,408
+And it's going to go and use that data
+
+66
+00:02:28,729 --> 00:02:31,688
+so that it can mock a complete local environment,
+
+67
+00:02:32,729 --> 00:02:35,609
+simulate these downstream dependencies that I may
+
+68
+00:02:35,609 --> 00:02:36,489
+not have available
+
+69
+00:02:36,889 --> 00:02:38,169
+on my local machine
+
+70
+00:02:38,489 --> 00:02:38,889
+and
+
+71
+00:02:39,468 --> 00:02:40,889
+ execute the code.
+
+72
+00:02:41,459 --> 00:02:42,258
+When it's all done,
+
+73
+00:02:42,338 --> 00:02:45,299
+it's going to tell me if my  new code changes
+
+74
+00:02:45,299 --> 00:02:46,818
+happen to break anything at all.
+
+75
+00:02:48,419 --> 00:02:49,778
+The advantage here,
+
+76
+00:02:49,938 --> 00:02:52,098
+above and beyond unit tests,
+
+77
+00:02:52,179 --> 00:02:53,618
+is I can understand
+
+78
+00:02:54,179 --> 00:02:56,338
+how this will actually functionally
+
+79
+00:02:56,658 --> 00:02:57,538
+run because,
+
+80
+00:02:58,008 --> 00:02:59,859
+ it will
+
+81
+00:03:00,128 --> 00:03:01,538
+ execute the code.
+
+82
+00:03:01,618 --> 00:03:02,258
+It'll
+
+83
+00:03:02,528 --> 00:03:03,979
+ Run it on my machine.
+
+84
+00:03:03,979 --> 00:03:05,778
+Even if I have dependencies
+
+85
+00:03:06,098 --> 00:03:07,538
+on other systems
+
+86
+00:03:07,998 --> 00:03:10,199
+those will get automatically mocked out.
+
+87
+00:03:10,199 --> 00:03:12,679
+You can see there's a mocked directory here.
+
+88
+00:03:12,679 --> 00:03:13,278
+That's how
+
+89
+00:03:13,709 --> 00:03:17,359
+  ProxyMock can mock out and simulate things like
+
+90
+00:03:17,359 --> 00:03:18,558
+third party APIs,
+
+91
+00:03:19,118 --> 00:03:20,079
+cloud services,
+
+92
+00:03:20,639 --> 00:03:22,959
+even databases can get mocked out.
+
+93
+00:03:23,359 --> 00:03:26,079
+And  I don't have to write any code to do this
+
+94
+00:03:26,639 --> 00:03:29,199
+and I don't have to install a bunch of libraries
+
+95
+00:03:29,359 --> 00:03:30,239
+or have
+
+96
+00:03:30,639 --> 00:03:30,729
+Cursor 
+
+97
+00:03:31,199 --> 00:03:33,199
+write a bunch of  throwaway code.
+
+98
+00:03:33,718 --> 00:03:35,158
+It's doing it based on
+
+99
+00:03:35,878 --> 00:03:35,949
+real 
+
+100
+00:03:36,239 --> 00:03:38,118
+observations of the traffic.
+
+101
+00:03:38,568 --> 00:03:42,739
+ it's in markdown format so it knows exactly how 
+
+102
+00:03:43,318 --> 00:03:43,429
+calls 
+
+103
+00:03:43,838 --> 00:03:45,399
+are made to my API,
+
+104
+00:03:45,639 --> 00:03:49,038
+exactly how my API responded and it even includes
+
+105
+00:03:49,038 --> 00:03:51,239
+things like the third party calls.
+
+106
+00:03:51,239 --> 00:03:54,758
+So here's a call to the SpaceX endpoint and how
+
+107
+00:03:54,758 --> 00:03:56,519
+SpaceX really responded.
+
+108
+00:03:56,998 --> 00:03:57,399
+Live,
+
+109
+00:03:57,799 --> 00:03:59,079
+HTTP headers,
+
+110
+00:03:59,628 --> 00:03:59,868
+body,
+
+111
+00:03:59,868 --> 00:04:01,308
+all of that is
+
+112
+00:04:01,628 --> 00:04:02,028
+available
+
+113
+00:04:02,829 --> 00:04:03,229
+to
+
+114
+00:04:03,588 --> 00:04:04,989
+ ProxyMock
+
+115
+00:04:05,549 --> 00:04:08,829
+so that  the
+
+116
+00:04:09,088 --> 00:04:13,229
+ Cursor can use this additional context to create
+
+117
+00:04:13,389 --> 00:04:15,149
+an actual local simulation.
+
+118
+00:04:15,949 --> 00:04:17,348
+Make sure that we didn't 
+
+119
+00:04:17,668 --> 00:04:18,428
+break anything.
+
+120
+00:04:18,588 --> 00:04:21,149
+It actually looks like it's adding
+
+121
+00:04:21,749 --> 00:04:25,749
+ some additional data in here to test our new API
+
+122
+00:04:25,749 --> 00:04:26,269
+as well,
+
+123
+00:04:26,619 --> 00:04:27,259
+which is good.
+
+124
+00:04:27,738 --> 00:04:30,858
+And then in the end it actually will generate new
+
+125
+00:04:31,019 --> 00:04:31,819
+observations
+
+126
+00:04:32,298 --> 00:04:33,019
+and can
+
+127
+00:04:33,418 --> 00:04:33,488
+compare 
+
+128
+00:04:34,019 --> 00:04:35,259
+the observations
+
+129
+00:04:36,449 --> 00:04:39,819
+ of   how the code changed,
+
+130
+00:04:40,778 --> 00:04:43,499
+if the code changed at all and compare it to the
+
+131
+00:04:43,499 --> 00:04:43,819
+live.
+
+132
+00:04:43,978 --> 00:04:44,379
+So
+
+133
+00:04:44,699 --> 00:04:45,899
+it says here,
+
+134
+00:04:46,228 --> 00:04:48,699
+ it downloaded a fresh
+
+135
+00:04:49,499 --> 00:04:49,509
+snapshot,
+
+136
+00:04:49,509 --> 00:04:49,548
+
+
+137
+00:04:50,619 --> 00:04:52,218
+it ran the mock server,
+
+138
+00:04:52,728 --> 00:04:52,968
+it
+
+139
+00:04:53,528 --> 00:04:56,168
+replayed 20 calls that were from the live
+
+140
+00:04:56,488 --> 00:04:56,889
+environment,
+
+141
+00:04:57,369 --> 00:04:58,889
+made sure that nothing broke
+
+142
+00:04:59,369 --> 00:04:59,769
+and
+
+143
+00:05:00,048 --> 00:05:02,809
+ all the other endpoints were validated.
+
+144
+00:05:03,048 --> 00:05:05,369
+Integration test completed successfully.
+
+145
+00:05:05,769 --> 00:05:08,408
+This is the confidence you need to know.
+
+146
+00:05:08,488 --> 00:05:08,889
+Okay,
+
+147
+00:05:08,889 --> 00:05:10,168
+I've got good changes here.
+
+148
+00:05:10,168 --> 00:05:13,009
+Let me keep all these changes and check it in and
+
+149
+00:05:13,009 --> 00:05:13,608
+push it in.
+
+150
+00:05:14,968 --> 00:05:17,928
+Feel free to check out more information about this
+
+151
+00:05:18,009 --> 00:05:20,168
+on speedscale.com
+
+152
+00:05:20,488 --> 00:05:22,889
+and search for Proximalk.
