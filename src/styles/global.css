@@ -52,6 +52,7 @@
 }
 .resume-role {
   font-weight: 600;
+  color: var(--foreground);
 }
 .resume-dates {
   color: var(--muted-foreground);
