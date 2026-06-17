@@ -3,6 +3,7 @@ title: "Twenty years of Linux, and now I run my own AI"
 description: "I've been an open source fan for a long time. Lately that's meant building my own local AI stack so I'm not at the mercy of token bills and shifting licenses."
 pubDatetime: 2026-06-16T09:00:00Z
 tags: ["ai", "local-ai", "open-source", "apple-silicon"]
+ogImage: "/post-images/running-my-own-local-ai-stack/dad-email-cover.png"
 ---
 
 I've been running Linux and Ubuntu for nearly 20 years. I can date it almost exactly, because I still have the email from my Dad back in early 2007 telling me he'd just installed Ubuntu. That's where this started.
