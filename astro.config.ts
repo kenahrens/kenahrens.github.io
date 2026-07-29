@@ -21,6 +21,9 @@ import config from "./astro-paper.config";
 
 export default defineConfig({
   site: config.site.url,
+  // Astro 7 defaults to 'jsx', which drops newline-only whitespace between
+  // inline elements and runs adjacent text together.
+  compressHTML: true,
   integrations: [
     mdx(),
     sitemap({
