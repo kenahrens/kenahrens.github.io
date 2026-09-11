@@ -28,7 +28,7 @@
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "satori": "^0.26.0",
-    "sharp": "^0.35.3",
+    "sharp": "^0.35.4",
     "slugify": "^1.6.9",
     "tailwindcss": "^4.3.0"
   },
@@ -54,7 +54,7 @@
       "sharp"
     ],
     "overrides": {
-      "sharp": "^0.35.3",
+      "sharp": "^0.35.4",
       "svgo": "^4.0.2",
       "fast-uri": "^3.1.4",
       "brace-expansion": "^5.0.7",
